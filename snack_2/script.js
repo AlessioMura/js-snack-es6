@@ -41,3 +41,15 @@ for (let i = 0; i < teams.length; i++) {
 console.log(teams);
 
 //Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+const foul_array = [];
+
+for (let i = 0; i < teams.length; i++) {
+    foul_array.push(
+        {
+            nome: teams[i].nome,
+            falli_subiti: teams[i].falli_subiti
+        }
+    )
+}
+console.log(foul_array);
